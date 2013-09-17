@@ -135,9 +135,11 @@ class SiteSearch
         $url = self::formatUrl($value, $this->id, $this->language, $start, $limit);
         $this->response = self::request($url);
 
-        $this->resultCount = self::parseResultCount($this->response);
-
-        return self::parseResult($this->response, $this->language);
+        if ($this->response !== null) {
+            $this->resultCount = self::parseResultCount($this->response);
+            return self::parseResult($this->response, $this->language);
+        }
+        return array();
     }
 
     /**
@@ -288,8 +290,13 @@ class SiteSearch
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
+        $header = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         curl_close($ch);
 
-        return $response;
+        if ($header === 200) {
+            return $response;
+        } else {
+            return null;
+        }
     }
 }

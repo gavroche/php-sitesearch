@@ -17,17 +17,23 @@ class SiteSearchTest extends PHPUnit_Framework_TestCase
 
     public function testSearch()
     {
-        $result = SiteSearch::create($this->googleSiteSearchID)->search('test');
+        // No point in automatically testing these as we need a private key
+        if ($this->googleSiteSearchID !== 'xxxxxxxxxxxxxx') {
+            $result = SiteSearch::create($this->googleSiteSearchID)->search('test');
 
-        $this->assertGreaterThan(0, count($result), 'SiteSearch::search() did get any result for the query "test"');
+            $this->assertGreaterThan(0, count($result), 'SiteSearch::search() did get any result for the query "test"');
+        }
     }
 
     public function testGetRawResponse()
     {
-        $q = new SiteSearch($this->googleSiteSearchID);
-        $q->search('hello');
-        $response = $q->getResponse();
+        // No point in automatically testing these as we need a private key
+        if ($this->googleSiteSearchID !== 'xxxxxxxxxxxxxx') {
+            $q = new SiteSearch($this->googleSiteSearchID);
+            $q->search('hello');
+            $response = $q->getResponse();
 
-        $this->assertRegExp('/<Q>hello<\/Q>/', $response, 'SiteSearch::search() response is not a valid Google Custom Search response');
+            $this->assertRegExp('/<Q>hello<\/Q>/', $response, 'SiteSearch::search() response is not a valid Google Custom Search response');
+        }
     }
 }

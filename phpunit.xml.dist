@@ -1,0 +1,16 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="test/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="true"
+         stopOnFailure="false"
+         syntaxCheck="false">
+    <testsuites>
+        <testsuite name="PHP Google Site Search Test Suite">
+            <directory>./test/SiteSearch/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

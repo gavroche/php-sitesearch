@@ -1,0 +1,19 @@
+{
+    "name": "gavroche/sitesearch",
+    "type": "library",
+    "description": "Google",
+    "keywords": ["Google Site Search PHP Wrapper"],
+    "homepage": "https://github.com/gavroche/php-sitesearch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Bull",
+            "email": "gavroche.bull@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0" : {
+            "SiteSearch" : "src/"
+        }
+    }
+}

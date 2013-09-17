@@ -13,4 +13,7 @@
             <directory>./test/SiteSearch/</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <var name="GOOGLE_SITE_SEARCH_IDENTIFIER" value="xxxxxxxxxxxxxx" />
+    </php>
 </phpunit>

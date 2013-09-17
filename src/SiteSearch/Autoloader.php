@@ -27,11 +27,15 @@ class Autoloader
      */
     public static function autoload($class)
     {
-        if (0 !== strpos($class, 'SiteSearch\\')) {
-            return null;
-        } else if (file_exists($file = __DIR__ . '/' . str_replace('\\', '/', preg_replace('{^SiteSearch\\\}', '', $class)) . '.php')) {
-            require_once $file;
-            return true;
+        if (0 === stripos($class, 'SiteSearch')) {
+            $file = preg_replace('{^SiteSearch\\\?}', '', $class);
+            $file = str_replace('\\', '/', $file);
+            $file = realpath(__DIR__ . (empty($file) ? '' : '/') . $file . '.php');
+            if (is_file($file)) {
+                require_once $file;
+                return true;
+            }
         }
+        return null;
     }
 }

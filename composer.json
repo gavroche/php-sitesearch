@@ -1,8 +1,8 @@
 {
     "name": "gavroche/sitesearch",
     "type": "library",
-    "description": "Google",
-    "keywords": ["Google Site Search PHP Wrapper"],
+    "description": "Google Site Search custom search PHP Wrapper Library",
+    "keywords": ["Google", "Site", "Search", "Custom", "API", "Engine"],
     "homepage": "https://github.com/gavroche/php-sitesearch",
     "license": "MIT",
     "authors": [

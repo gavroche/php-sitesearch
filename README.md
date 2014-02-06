@@ -1,7 +1,7 @@
 PHP Google Site Search
 ======================
 
-[![Build Status](https://secure.travis-ci.org/gavroche/php-sitesearch.png?branch=master)](http://travis-ci.org/gavroche/php-sitesearch)
+[![Build Status](https://secure.travis-ci.org/gabrielbull/php-sitesearch.png?branch=master)](http://travis-ci.org/gabrielbull/php-sitesearch)
 
 Copyright 2013, Gabriel Bull, Licensed under the MIT License.
 

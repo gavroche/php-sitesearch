@@ -3,17 +3,28 @@ PHP Google Site Search
 
 [![Build Status](https://secure.travis-ci.org/gabrielbull/php-sitesearch.png?branch=master)](http://travis-ci.org/gabrielbull/php-sitesearch)
 
-Copyright 2013, Gabriel Bull, Licensed under the MIT License.
-
 Search engine for websites using Google Custom Search Engine with a Google Site Search account.
 
 ## Google Site Search API
 
 To use the Google Site Search API, you have to [obtain a search engine ID from Google](https://www.google.com/cse/).
 
+
 ## Requirements
 
 This library uses PHP 5.3+.
+
+## Install
+
+It is recommended that you install the PHP Google Site Search library [through composer](http://getcomposer.org).
+
+```JSON
+{
+    "require": {
+        "gabrielbull/sitesearch": "dev-master"
+    }
+}
+```
 
 ## Search
 

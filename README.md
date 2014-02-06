@@ -14,7 +14,7 @@ To use the Google Site Search API, you have to [obtain a search engine ID from G
 
 This library uses PHP 5.3+.
 
-## Install
+## Installation
 
 It is recommended that you install the PHP Google Site Search library [through composer](http://getcomposer.org).
 

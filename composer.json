@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Google Site Search custom search PHP Wrapper Library",
     "keywords": ["Google", "Site", "Search", "Custom", "API", "Engine"],
-    "homepage": "https://github.com/gabrielbull/php-sitesearch",
+    "homepage": "https://github.com/gavroche/php-sitesearch",
     "license": "MIT",
     "authors": [
         {
